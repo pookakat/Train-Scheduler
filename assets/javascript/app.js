@@ -27,7 +27,6 @@
           .append(`<td>${data.firstArrival}</td>`)
           .append(`<td>${nextArrival}</td>`)
           .append(`<td>${moment(nextArrival).subtract(moment())}</td>`);
-        console.log("changed", doc.data())
         
       })
     })
