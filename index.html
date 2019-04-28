@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Scheduler</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div id="welcome" class="row">
+        <div id="title" class="text-center">
+            <h1>Welcome to Shining Time Station</h1>
+            <h2 class="text-danger">Sir Top'Em Hat Worked Hard on This Scheduler! Pay Attention to Your Train Times!</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="container col-md-2">
+            <div class="jumbotron bg-primary">
+                <img src="assets/images/thomas.JPG" class="thomas" alt="thomas the train" />
+                <h2 text-white text-center>Train Times</h3>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="container  col-md-6">
+            <nav class="navbar bg-primary timesTitle">
+                <span class="navbar-text text-white">
+                    Current Train Schedule
+                </span>   
+            </nav>
+            <table id="trainSched" class="table text-black">
+                <thead>
+                    <tr>
+                    <th scope="col">Train Name</th>
+                    <th scope="col">Destination</th>
+                    <th scope="col">Frequency (min)</th>
+                    <th scope="col">Next Arrival</th>
+                    <th scope="col">Minutes Away</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <th scope="row">Thomas</th>
+                    <td>London</td>
+                    <td>30</td>
+                    <td></td>
+                    <td></td>
+                    </tr>
+                    <tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <div id="inputForm" class="container col-md-6">
+            <nav class="navbar navbar-fluid bg-primary timesTitle">
+                <span class="navbar-text text-white">
+                    Add Train
+                </span>   
+            </nav>
+            <form class="border border-primary">
+                <div class="form-group">
+                    <label for="name">Train Name</label>
+                        <input id="name" class="form-control" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="destination">Destination</label>
+                        <input id="destination" class="form-control" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="first">First Train Time (HH:mm - military time)</label>
+                    <input id="firstArrival" class="form-control" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="frequency">Frequency</label>
+                    <input id="frequency" class="form-control" type="text">
+                </div>
+                <button id="trainAppear" type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+    <script src="assets/javascript/moment.js"></script>
+    <script src="assets/javascript/app.js"></script>
+</body>
+</html>

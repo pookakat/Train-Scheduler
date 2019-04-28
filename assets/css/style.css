@@ -1,0 +1,16 @@
+#title{
+    margin: auto;
+    margin-top: 50px;
+}
+.thomas{
+    max-width:100%;
+    border: solid 4px white;
+    margin: auto;
+}
+.table{
+    border-collapse: unset;
+    border:1px solid blue;
+}
+form{
+    padding: 5px;
+}
