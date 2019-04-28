@@ -44,8 +44,9 @@
   });
 
     function timeCalc(firstArrival, interval) {
-        let nextArrival = moment(firstArrival);
-        while ( moment(nextArrival).isBefore(moment()) ) {
+        let currentTime = moment().format("HH:mm");
+        let nextArrival = moment(firstArrival, "HH:mm");
+        while ( moment(nextArrival).isBefore(moment(currentTime)) ) {
             nextArrival = moment(nextArrival).add(interval, "minutes")
         }
         return nextArrival;
